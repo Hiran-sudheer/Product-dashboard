@@ -32,7 +32,7 @@ export default function ProductForm({ form, setForm, onSubmit, editing }) {
       />
       <button
         type="submit"
-        className="flex items-center justify-center bg-blue-600 text-white rounded py-2 hover:bg-blue-700 col-span-full"
+        className="flex items-center justify-center bg-blue-600 text-white rounded py-2 px-4 mx-auto hover:bg-blue-700 col-span-full"
       >
         <FiPlus className="mr-2" />
         {editing ? "Update Product" : "Add Product"}
