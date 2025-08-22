@@ -33,7 +33,7 @@ export function useProducts() {
   const createProduct = async (product) => {
     try {
       const { data } = await addProduct(product);
-      setProducts((prev) => [...prev, { ...data, ...product }]);
+      setProducts((prev) => [{ ...data, ...product }, ...prev]);
       toast.success("Product added");
     } catch {
       toast.error("Error adding product");
